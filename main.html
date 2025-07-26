@@ -1,35 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer Layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-        </div>
+    footer {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .logo-details {
+      display:flex;
+	  justify-content:space-between;
+	  margin-bottom: 30px;
+    }
+
+    .logo-details div {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .footer-links {
+      display: flex;
+      flex: 1 1 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      min-width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-bottom: 1px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 8px 0;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .media-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .media-icons a {
+      width: 36px;
+      height: 36px;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+
+    .media-icons a:hover {
+      opacity: 0.8;
+    }
+
+    .fa-facebook { background-color: #3b5998; }
+    .fa-twitter { background-color: #55acee; }
+    .fa-instagram { background-color: #e4405f; }
+    .fa-linkedin { background-color: #0077b5; }
+    .fa-youtube { background-color: #ff0000; }
+
+    .footer-bottom {
+      background-color: #1e1e2f;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<footer>
+  <div class="footer-container">
+    <div class="logo-details">
+      <div>company</div>
+	 <div class="media-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
+
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">App Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">Banner Design</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-column">
+        <h3>Other services</h3>
+        <ul>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Content Marketing</a></li>
+          <li><a href="#">Prints</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+918879887262">+91 8879887262</a></li>
+          <li><a href="tel:+918879887262">+91 8879887262</a></li>
+          <li><a href="mailto:contact@company.com">contact@company.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="media-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>&copy; 2021 company.</div>
+    <div><a href="#" style="color:#aaa; text-decoration: none;">Privacy policy</a></div>
+  </div>
+</footer>
+
+</body>
 </html>
