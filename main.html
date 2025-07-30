@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Footer Section</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <style>
     * {
       margin: 0;
@@ -35,27 +38,26 @@
 
     .footer-nav h1 {
       font-size: 2.5rem;
-
     }
 
-    .nav-links {
+    .media-icons {
       display: flex;
       gap: 20px;
       list-style: none;
     }
 
-    .nav-links li a {
+    .media-icons li a {
       color: #fff;
       font-size: 1.5rem;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .nav-links li a:hover {
+    .media-icons li a:hover {
       color: #00aced;
     }
 
-    .links-container {
+    .link-boxes {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -63,35 +65,33 @@
       gap: 40px;
     }
 
-    .links-container > div {
+    .link-boxes > div {
       min-width: 200px;
     }
 
-    .links-container h2 {
+    .link-boxes h2 {
       font-size: 1.2rem;
       margin-bottom: 15px;
       color: #00aced;
     }
 
-    .links-container ul {
+    .link-boxes ul {
       list-style: none;
       padding: 0;
     }
 
-    .links-container ul li {
+    .link-boxes ul li {
       margin-bottom: 10px;
       cursor: pointer;
       transition: color 0.3s;
     }
 
-    .links-container ul li:hover {
+    .link-boxes ul li:hover {
       color: #00aced;
     }
 
     .footer-sec {
-		
-      display:flex;
-	  justify-content:space-between;
+      text-align: center;
       padding-top: 20px;
       font-size: 0.9rem;
       color: #aaa;
@@ -105,18 +105,17 @@
         gap: 20px;
       }
 
-      .links-container {
+      .link-boxes {
         flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-
   <footer class="container">
     <div class="footer-nav">
       <h1>Company</h1>
-      <ul class="nav-links">
+      <ul class="media-icons">
         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -125,13 +124,13 @@
       </ul>
     </div>
 
-    <div class="links-container">
+    <div class="link-boxes">
       <div class="links">
         <h2>Links</h2>
         <ul>
           <li>Home</li>
           <li>Contact</li>
-          <li>About Us</li>
+          <li>About</li>
           <li>Get Started</li>
         </ul>
       </div>
@@ -156,8 +155,8 @@
       <div class="contact">
         <h2>Contact</h2>
         <ul>
-          <li>+8879887262</li>
-          <li>+8879887262</li>
+          <li>8879887262</li>
+          <li>8879887262</li>
           <li>contact@company.com</li>
         </ul>
       </div>
@@ -165,10 +164,7 @@
 
     <div class="footer-sec">
       <p>&copy; 2021 Company. All rights reserved.</p>
-	  <p>Privacy policy</p>
     </div>
   </footer>
-
 </body>
 </html>
-
